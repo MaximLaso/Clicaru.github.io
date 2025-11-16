@@ -1,0 +1,86 @@
+.modal_1,
+.modal_2{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+
+.modal_1.modal_1-active,
+.modal_2.modal_2-active {
+    display: flex;
+}
+.modal-content {
+    height: 793px;
+    width: 892px;
+    background-color: rgba(190, 255, 111, 1);
+    border-radius: 30px;
+    padding: 40px;
+    position: relative;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.sing_form-header{
+    margin-top: 89px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    
+}
+.sing_form{
+    cursor: pointer;
+}
+.modal-fields{
+    margin-top: 98px;
+    margin-left: 83px;
+    margin-right: 83px; 
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 98px;
+ 
+}
+.modal-fields-ul{
+
+    list-style: none;
+}
+.modal-fields-ul li div{
+    margin-bottom: 27px;
+}
+.modal-fields-ul li input{
+    padding-left: 10px;
+    width: 100%;
+    height: 71px;
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.form_button{
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 71px;
+}
+
+@supports (-ms-ime-align: auto) {
+    .modal-active ~ * {
+        overflow: hidden !important;
+    }
+}

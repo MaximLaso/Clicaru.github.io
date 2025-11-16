@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="index.js"></script>
+    <title>Clicaru</title>
+</head>
+
+<body>
+
+    <header id="top" class="header">
+        
+        <div class="container header_container">
+            <svg id="logo" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="#DDE9FF" />
+            </svg>
+            <nav class="header-hrefs">
+                <a href="">Products</a>
+                <a href="index.htm">Home</a>
+                <a href="">Offers</a>
+                <a href="#id_why_us">Why us</a>
+                <a href="">Contacs</a>
+            </nav>
+            <button  class="header-button_join" onclick="join_button()">Join now</button>
+        </div>
+    </header>
+    <div class="title">
+        <div class="title title_name">Clickaroo</div>
+        <div class="title title_slogan">turning Clicks into your Success</div>
+    </div>
+
+    <div class="but_list_1">
+        <button class="blur_button but_offer">Make an offer</button>
+        <button class="blur_button but_partner">Become a partner</button>
+    </div>
+
+
+    <div class="title title_offers">Offers</div>
+    <div class="but_list_1 but_list_2">
+        <button class="blur_button but_shirt"></button>
+        <button class="blur_button but_cosmetics"></button>
+        <button class="blur_button but_plane"></button>
+    </div>
+
+    <div style="margin-bottom: 84px;" class="title title_how_it_works">How it works</div>
+
+    <ul class="section info">
+
+        <li>
+            <div class="li_text_but" onclick="handleClick(this)">Website not visible in search engines, no traffic from
+                social media?</div>
+
+            <div class="hidden_information">We conduct an audit, develop an SEO promotion strategy, and set up targeted
+                advertising to attract qualified traffic from search engines and social networks. </div>
+        </li>
+        <li>
+            <div class="li_text_but" onclick="handleClick(this)">Don't know what competitors are doing and how they
+                achieve success?</div>
+
+            <div class="hidden_information">We conduct in-depth competitor analysis that provides insights and practical
+                recommendations for your strategy.</div>
+        </li>
+        <li>
+            <div class="li_text_but" onclick="handleClick(this)">No clear understanding of who the target audience is?
+            </div>
+            <div class="hidden_information">We conduct deep market and audience research to provide you with clear
+                customer profiles and a communication strategy.</div>
+        </li>
+        <li>
+            <div class="li_text_but" onclick="handleClick(this)">Negative reviews damaging reputation?</div>
+            <div class="hidden_information">We conduct an audit, develop an SEO promotion strategy, and set up targeted
+                advertising to attract qualified traffic from search engines and social networks.</div>
+        </li>
+        <li>
+            <div class="li_text_but" onclick="handleClick(this)">Brand unrecognizable and not standing out from
+                competitors?</div>
+            <div class="hidden_information">We create a unique brand identity and develop a strategy to increase its
+                recognition.</div>
+        </li>
+    </ul>
+
+
+    <div style="margin-bottom: 104px;" id="id_why_us" class="title title_why_us">Why us?</div>
+
+
+    <ul class="section why_us">
+
+        <li>
+            <div class="greenBox day_to_day"></div>
+            <p>Day-to-day payments</p>
+        </li>
+
+        <li>
+            <div class="greenBox offers"></div>
+            <p>Exclusive offers</p>
+        </li>
+        <li>
+            <div class="greenBox support"></div>
+            <p>24/7 support</p>
+        </li>
+        <li>
+            <div class="greenBox manager"></div>
+            <p>Personal Manager</p>
+        </li>
+    </ul>
+
+    <footer class="footer">
+        <div class="container footer_container">
+
+
+            <svg id="logo_2" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="#DDE9FF" />
+            </svg>
+
+            <div class="footer-elements footer-digital_marketing">Digital Marketing<br>Clickaroo</br>
+            </div>
+
+            <ul class="footer-elements">
+                <li>
+                    <a href="index.htm" class="footer_text footer-home">Home</a>
+                    <a href="" class="footer_text footer-products">Products</a>
+
+                </li>
+                <li>
+                    <a href="" class="footer_text footer-how_it_works">How it works</a>
+                    <a href="" class="footer_text footer-offers">Offers</a>
+                </li>
+                <li>
+                    <a href="" class="footer_text footer-contacts">Contacts</a>
+                    <a href="" class="footer_text footer-make_offer">Make an offer</a>
+                </li>
+                <li>
+                    <a href="" class="footer_text footer-partner">Become a Partner</a>
+                </li>
+            </ul>
+    </footer>
+
+<div id="modal_1" class="modal_1">
+    <div class="modal-content">
+        <form id="sign_in_form">
+            <ul class="sing_form-header">
+                <li><div tabindex="0" role="button" class="sing_form sing_in" onclick="switchForm('signin')">Sign in</div></li>
+                <li><div tabindex="0" role="button" class="sing_form sing_up" onclick="switchForm('signup')">Sign up</div></li>
+            </ul>
+            <div class="modal-fields">
+                <ul class="modal-fields modal-fields-ul">
+                    <li>
+                        <div>username</div>
+                        <input type="text" class="username_form">
+                    </li>
+                    <li>
+                        <div>password</div>
+                        <input type="password" class="password_form">
+                    </li>
+                </ul>
+                <button type="button" class="form_button submit" onclick="signInFunc()">Sign in</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="modal_2" class="modal_2">
+    <div class="modal-content">
+        <form id="sign_up_form">
+            <ul class="sing_form-header">
+                <li><div tabindex="0" role="button" class="sing_form sing_in" onclick="switchForm('signin')">Sign in</div></li>
+                <li><div tabindex="0" role="button" class="sing_form sing_up" onclick="switchForm('signup')">Sign up</div></li>
+            </ul>
+            <div class="modal-fields">
+                <ul class="modal-fields modal-fields-ul">
+                    <li>
+                        <div>username</div>
+                        <input type="text" class="username_form">
+                    </li>
+                    <li>
+                        <div>e-mail</div>
+                        <input type="email" class="email_form">
+                    </li>
+                    <li>
+                        <div>password</div>
+                        <input type="password" class="password_form">
+                    </li>
+                    <li>
+                        <div>confirm password</div>
+                        <input type="password" class="password_form">
+                    </li>
+                </ul>
+                <button type="button" class="form_button submit" onclick="signUpFunc()">Sign up</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+
+</html>
